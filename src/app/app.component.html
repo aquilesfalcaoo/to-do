@@ -1,9 +1,110 @@
 <main>
   <article>
     <h1
-      class="text-center text-zinc-800 !leading-10 !text-4xl !font-bold font-['Raleway'] !mt-5"
+      class="text-center text-zinc-800 !leading-10 !text-4xl !font-bold font-['Raleway'] pt-5"
     >
       #to-do app
     </h1>
+    <div class="container mx-auto p-5">
+      <mat-tab-group mat-align-tabs="center">
+        <mat-tab label="All">
+          <div class="mt-5">
+            <div class="flex justify-center gap-8">
+              <input
+                type="text"
+                class="p-5 rounded-xl border border-stone-300 w-2/5 focus:outline-blue-500"
+                placeholder="add details"
+              />
+              <button
+                type="button"
+                class="bg-blue-500 shadow shadow-blue-600 text-white rounded-xl px-10 hover:bg-blue-700 hover:duration-300 focus:shadow-md"
+              >
+                Add
+              </button>
+            </div>
+            <div class="flex justify-start items-center mt-8 px-96 gap-2">
+              <input
+                class="accent-blue-600 rounded-md w-5 h-5"
+                type="checkbox"
+                name="checkbox"
+              />
+              <p
+                class="font-['Raleway'] font-medium !text-lg !leading-10 !mb-0"
+              >
+                Do coding challenges
+              </p>
+            </div>
+            <div class="flex justify-start items-center px-96 gap-2">
+              <input
+                class="accent-blue-600 rounded-md w-5 h-5"
+                type="checkbox"
+                name="checkbox"
+              />
+              <p
+                class="font-['Raleway'] line-through font-medium !text-lg !leading-10 !mb-0"
+              >
+                Do coding challenges
+              </p>
+            </div>
+          </div>
+        </mat-tab>
+        <mat-tab label="Active">
+          <div class="mt-5">
+            <div class="flex justify-center gap-8">
+              <input
+                type="text"
+                class="p-5 rounded-xl border border-stone-300 w-2/5 focus:outline-blue-500"
+                placeholder="add details"
+              />
+              <button
+                type="button"
+                class="bg-blue-500 shadow shadow-blue-600 text-white rounded-xl px-10 hover:bg-blue-700 hover:duration-300 focus:shadow-md"
+              >
+                Add
+              </button>
+            </div>
+            <div class="flex justify-start items-center mt-8 px-96 gap-2">
+              <input
+                class="accent-blue-600 rounded-md w-5 h-5"
+                type="checkbox"
+                name="checkbox"
+              />
+              <p
+                class="font-['Raleway'] font-medium !text-lg !leading-10 !mb-0"
+              >
+                Do coding challenges
+              </p>
+            </div>
+          </div>
+        </mat-tab>
+        <mat-tab label="Completed">
+          <div class="mt-5">
+            <div class="flex justify-between px-96">
+              <div class="flex items-center gap-2">
+                <input
+                  class="accent-blue-600 rounded-md w-5 h-5"
+                  type="checkbox"
+                  name="checkbox"
+                />
+                <p
+                  class="font-['Raleway'] line-through font-medium !text-lg !leading-10 !mb-0"
+                >
+                  Task done
+                </p>
+              </div>
+              <mat-icon aria-hidden="false" color="warn">delete</mat-icon>
+            </div>
+            <div class="flex justify-end px-96 my-7">
+              <button
+                class="bg-red-500 font-['Raleway'] font-medium shadow shadow-red-600 text-white rounded-md px-10 py-3 hover:bg-red-700 hover:duration-300 focus:shadow-md"
+                type="button"
+              >
+                Delete all
+              </button>
+            </div>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
   </article>
 </main>
